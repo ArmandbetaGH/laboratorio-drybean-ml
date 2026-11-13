@@ -34,8 +34,10 @@
       versión de sklearn compatible.
 - [ ] Si procede, guardar la copia realmente descargada en `data/raw/`
       y documentar fecha, fuente y checksum (no crear datos sintéticos).
-- [ ] Confirmar si el profesor quiere repositorio GitHub; no hay URL en
-      la entrega aportada. Si se usa, verificar enlaces y `.gitignore`.
+- [x] Repositorio privado creado y primer push completado desde Windows.
+      URL: https://github.com/ArmandbetaGH/laboratorio-drybean-ml
+- [ ] Incorporar actualización fase 2 en `main` y verificar ejecución Windows.
+- [ ] Invitar a la compañera al terminar ajustes y verificar clonación en Mac.
 - [ ] Hacer la socialización de 10–12 minutos basada en los archivos y
       responder las preguntas de la guía.
 
@@ -50,3 +52,9 @@ no son requisitos nuevos del Laboratorio 1.
 - Correcta deserialización del modelo original en otro computador.
 - Roles personales, dailies o retrospectivas reales, por ausencia de
   documentos que los acrediten.
+
+## Actualización posterior — fase 2 (comprensión de datos)
+- Se añadió una interpretación en Markdown al notebook (sin modificar código ni resultados históricos).
+- Se agregó un script multiplataforma para generar evidencias desde `data/processed/drybean_clean.csv`.
+- Se añadieron pruebas de validación del esquema y generación del reporte.
+- El reporte del CSV limpio **no es** una descarga nueva de UCI ni valida los 68 duplicados originales.

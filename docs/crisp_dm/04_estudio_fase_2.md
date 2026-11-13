@@ -69,3 +69,37 @@ conjunto no tiene una distribución uniforme de clases.
 Notebook con las celdas de exploración, reporte de nulos y duplicados,
 distribución de clases y una interpretación breve de los resultados.
 El equipo debe reejecutar y corroborar las salidas del notebook en sus equipos.
+
+## Paso F. Dejar evidencia reproducible sin reentrenar
+Desde la carpeta raíz del proyecto, ejecutar:
+
+```bash
+python scripts/generar_reporte_calidad.py
+python -m pytest -q
+```
+
+El primer comando genera `outputs/reports/calidad_datos_procesados.json`
+y `outputs/reports/distribucion_clases_procesadas.csv` a partir del CSV limpio.
+La ruta se obtiene desde el archivo Python, sin depender de Windows o Mac.
+
+**Lectura guiada del código:**
+- `pd.read_csv(...)`: lee los datos procesados en un DataFrame.
+- `df.shape`: obtiene dimensiones de filas y columnas.
+- `df.isna().sum()`: calcula faltantes por variable.
+- `df.duplicated().sum()`: cuenta duplicados exactos.
+- `df["Class"].value_counts()`: muestra tamaños de las siete clases.
+- `to_csv()` y `json.dumps()`: guardan resultados para la sustentación y auditoría.
+
+**Separación de evidencias:** el notebook contiene las salidas históricas
+de la fuente original (13.611 filas, 68 duplicados), mientras el reporte
+recién generado analiza el archivo ya limpio (13.543 filas, 0 duplicados).
+No afirmar que se descargó de nuevo UCI solo por ejecutar este script.
+
+## Respuestas esperadas para estudiar
+1. `Class` es la etiqueta a predecir; incluirla entre las entradas filtraría la respuesta.
+2. 16 son predictoras; la columna adicional es `Class`, total 17.
+3. Las filas duplicadas compartidas entre train y test pueden inflar las métricas.
+4. F1 macro promedia el F1 de las siete clases sin ponderar por su tamaño.
+
+**Pregunta para sustentar:** ¿por qué una clase minoritaria con pocos aciertos
+puede quedar disimulada por el Accuracy global?

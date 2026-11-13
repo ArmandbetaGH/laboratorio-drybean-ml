@@ -4,6 +4,20 @@ Proyecto académico de Gestión de Proyectos en IA y Ciencia de Datos, basado en
 **CRISP-DM + TDSP + Scrum ML**. Esta es una **copia revisada** del proyecto
 entregado por un compañero; el original no ha sido modificado.
 
+
+## Material para el equipo (Mónica, Andrés y Armando)
+
+**Para estudiar y preparar la sustentación:**
+
+1. [`docs/GUIA_ESTUDIO_EQUIPO.md`](docs/GUIA_ESTUDIO_EQUIPO.md) - explicación completa, conceptos, ejemplos y preguntas.
+2. [`docs/GUION_SUSTENTACION_3_PERSONAS.md`](docs/GUION_SUSTENTACION_3_PERSONAS.md) - intervención propuesta de cada integrante, 11:30 min.
+3. [`docs/MAPA_RUBRICA_EVIDENCIAS.md`](docs/MAPA_RUBRICA_EVIDENCIAS.md) - evidencia por criterio y 9 puntos de Definition of Done.
+4. [`docs/VALIDACION_FINAL.md`](docs/VALIDACION_FINAL.md) - comprobaciones pendientes y comandos Windows/Mac.
+5. [`docs/material_presentacion/`](docs/material_presentacion/) - versiones PDF para compartir y estudiar.
+6. [`scrum/definition_of_done.md`](scrum/definition_of_done.md) - criterios del laboratorio.
+
+**Situación:** la carga y exploración inicial del notebook ya se comprobó en Windows; las 6 pruebas existentes pasaron y se generaron reportes de calidad. **El notebook íntegro y los roles reales aún requieren verificación final.** Esta versión no afirma que hayan ocurrido reuniones Scrum o una validación con usuarios.
+
 ## 1. Problema y alcance
 
 Caso simulado: una empresa agrícola clasifica parcialmente de forma manual
@@ -73,6 +87,21 @@ Para comprobar solo estructura/datos locales (sin descarga ni entrenamiento):
 python scripts/verificar_estructura.py
 ```
 
+### Evidencia reproducible de la fase 2: calidad del CSV limpio
+
+Sin descargar de UCI ni entrenar modelos, podemos validar la copia procesada:
+
+```bash
+python scripts/generar_reporte_calidad.py
+python -m pytest -q
+```
+
+Genera `outputs/reports/calidad_datos_procesados.json` y
+`outputs/reports/distribucion_clases_procesadas.csv`. Esta comprobación
+analiza **13.543 registros del CSV limpio**, no los 13.611 registros
+originales de UCI. Para ver los 68 duplicados originales hay que
+consultar las salidas guardadas del notebook o ejecutar su descarga.
+
 ## 6. Demostración de inferencia local
 
 El notebook guarda un pipeline Logistic Regression con `joblib` y luego
@@ -108,7 +137,9 @@ Consultar `docs/revision/pendientes_para_equipo.md` antes de entregar.
 
 ## 9. GitHub y colaboración Windows/macOS
 
-El repositorio está preparado para publicarse/clonarse desde ambos sistemas.
+Repositorio privado existente: https://github.com/ArmandbetaGH/laboratorio-drybean-ml
+
+La primera versión ya se publicó en `main` desde Windows. La fase 2 ya se validó localmente en Windows; las actualizaciones posteriores deben publicarse sin crear otro repositorio.
 - Guía completa de publicación, ramas y Pull Requests: [`docs/GITHUB_COLABORACION.md`](docs/GITHUB_COLABORACION.md).
 - Fase 2 explicada paso a paso: [`docs/crisp_dm/04_estudio_fase_2.md`](docs/crisp_dm/04_estudio_fase_2.md).
 - `.gitignore` excluye entornos locales, cachés y archivos del sistema; `.gitattributes`

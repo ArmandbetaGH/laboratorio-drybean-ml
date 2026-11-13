@@ -7,7 +7,7 @@ reunión real. «Pendiente» = requiere información o trabajo adicional.
 | ID | Historia o tarea | Prioridad | Rol propuesto (sin nombres asignados) | Estado documental | Evidencia / criterio de aceptación |
 |---|---|---|---|---|---|
 | PB-01 | Obtener y cargar datos de UCI | Alta | Data Engineer | Evidenciado parcialmente | Notebook carga UCI; `data/raw` sin copia local. |
-| PB-02 | Examinar calidad, nulos, duplicados y clases | Alta | Data Analyst | Evidenciado | Celdas 7–10, conteos documentados. |
+| PB-02 | Examinar calidad, nulos, duplicados y clases | Alta | Data Analyst | Evidenciado | Celdas 7–10, interpretación y reporte reproducible en `outputs/reports/`. |
 | PB-03 | Limpiar datos y conservar copia procesada | Alta | Data Engineer | Evidenciado | Celdas 12–15 y CSV procesado. |
 | PB-04 | Separar entrenamiento/prueba reproduciblemente | Alta | Data Analyst | Evidenciado | Celda 14: 80/20, estratificada, semilla 42. |
 | PB-05 | Entrenar y evaluar baseline | Alta | ML Engineer | Evidenciado; revisar advertencias | Celdas 16–18 y métricas. |

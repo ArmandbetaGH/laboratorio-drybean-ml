@@ -4,31 +4,48 @@
 GitHub es el **repositorio compartido**, no un entorno Python compartido.
 Cada persona clona los archivos y crea su propio `.venv` (excluido por `.gitignore`).
 Los resultados académicos y datos versionables sí quedan en el repositorio.
-Se propone una carpeta/repositorio **nuevo e independiente** del Taller de Series.
+Se utiliza el repositorio privado **`ArmandbetaGH/laboratorio-drybean-ml`**, independiente del Taller de Series. La invitación a la compañera se hará cuando el equipo haya terminado los ajustes.
 
-## 2. Crear el repositorio (una sola persona, inicialmente desde Windows)
-1. Descomprimir el ZIP; abrir en VS Code la carpeta `laboratorio_drybean_ml` (la que contiene `README.md`).
-2. Crear un repositorio **vacío** en GitHub (sin README, licencia ni gitignore automáticos), por ejemplo `laboratorio-drybean-ml`.
-3. En el terminal de VS Code, ejecutar desde esa carpeta (cambiar TU_USUARIO por el propietario de GitHub):
+## 2. Repositorio ya creado y publicado desde Windows
+El repositorio ya fue inicializado, conectado a `origin` y publicado con el primer commit. **No repetir `git init` ni `git remote add origin` en la copia local actual.** Para la siguiente actualización, conservar la carpeta `.git` y hacer cambios sobre los archivos existentes.
+
+Como referencia, el procedimiento inicial fue:
+- Crear `laboratorio-drybean-ml` como repositorio privado y vacío.
+- Desde la carpeta raíz, realizar el commit inicial y conectar el remoto:
 
 ```bash
 git init
 git branch -M main
 git add .
 git commit -m "Inicio laboratorio Dry Bean: CRISP-DM, TDSP y Scrum ML"
-git remote add origin https://github.com/TU_USUARIO/laboratorio-drybean-ml.git
+git remote add origin https://github.com/ArmandbetaGH/laboratorio-drybean-ml.git
 git push -u origin main
 ```
 
 Si se creó un repositorio con README automático, el remoto ya tendrá un commit; es preferible
 crear uno vacío para evitar reconciliar historiales en este primer paso.
 
-## 3. Clonar en macOS (compañera)
+## 3. Aplicar actualizaciones en tu copia Windows
+1. Descargar la actualización de la fase 2 y extraerla manteniendo sus rutas (`docs/`, `scripts/`, `src/`, etc.) encima de la carpeta existente, **sin borrar `.git`**.
+2. En VS Code revisar cambios con `git status`, ejecutar pruebas y solo entonces confirmar y enviar al repositorio.
+
+```powershell
+python scripts/generar_reporte_calidad.py
+python -m pytest -q
+git status
+git add .
+git commit -m "CRISP-DM fase 2: analisis de calidad de datos"
+git push origin main
+```
+
+Si las dependencias no están instaladas, crear el entorno virtual del apartado Windows antes de correr las pruebas.
+
+## 4. Clonar en macOS (compañera)
 1. Aceptar la invitación en *Settings > Collaborators* de GitHub si el repositorio es privado.
 2. Abrir terminal y ejecutar (usar la URL real visible en GitHub > Code):
 
 ```bash
-git clone https://github.com/TU_USUARIO/laboratorio-drybean-ml.git
+git clone https://github.com/ArmandbetaGH/laboratorio-drybean-ml.git
 cd laboratorio-drybean-ml
 python3 --version
 python3 -m venv .venv
@@ -44,7 +61,7 @@ Se recomienda Python **3.10, 3.11 o 3.12**, no Python 3.13 sin antes verificar c
 Con conexión a Internet, abrir `notebooks/01_laboratorio_drybean.ipynb` y ejecutar desde el inicio.
 El notebook utiliza rutas relativas del proyecto, no rutas de macOS o Windows.
 
-## 4. Windows (propietario)
+## 5. Windows (propietario)
 En PowerShell abierto en la carpeta del proyecto:
 
 ```powershell
@@ -61,7 +78,7 @@ python -m jupyter lab
 Si PowerShell impide la activación, abrir **CMD** y usar `.venv\Scripts\activate.bat`.
 No subir el entorno virtual al repositorio.
 
-## 5. Flujo para trabajar en equipo (como en Series)
+## 6. Flujo para trabajar en equipo (como en Series)
 Cada integrante trabaja desde una rama propia, sube los cambios y crea un Pull Request
 para revisarlos antes de fusionarlos a `main`.
 
@@ -87,7 +104,7 @@ git pull origin main
 los conflictos en notebooks son difíciles de resolver. Una persona puede encargarse del
 notebook y otra de `docs/`, `scrum/` o `README.md`.
 
-## 6. ¿Qué se sincroniza y qué no?
+## 7. ¿Qué se sincroniza y qué no?
 
 Se sincroniza: `src/`, `notebooks/`, `docs/`, `scrum/`, `data/processed/`,
 `outputs/`, `README.md`, `.gitignore`, `.gitattributes`, `requirements.txt`.
@@ -98,7 +115,7 @@ artefactos de origen confiable. Para usar el modelo original se debe comprobar
 compatibilidad de librerías; lo más robusto es regenerarlo ejecutando el notebook
 con dependencias acordadas.
 
-## 7. Validaciones antes del Pull Request
+## 8. Validaciones antes del Pull Request
 
 ```bash
 python scripts/verificar_estructura.py

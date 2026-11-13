@@ -1,0 +1,87 @@
+{
+  "fuente_analizada": "data/processed/drybean_clean.csv",
+  "nota_procedencia": "Archivo procesado de la entrega; NO contiene los 13.611 registros UCI originales",
+  "filas": 13543,
+  "columnas_totales": 17,
+  "variables_predictoras": 16,
+  "variable_objetivo": "Class",
+  "numero_clases": 7,
+  "valores_nulos_totales": 0,
+  "nulos_por_columna": {
+    "Area": 0,
+    "Perimeter": 0,
+    "MajorAxisLength": 0,
+    "MinorAxisLength": 0,
+    "AspectRatio": 0,
+    "Eccentricity": 0,
+    "ConvexArea": 0,
+    "EquivDiameter": 0,
+    "Extent": 0,
+    "Solidity": 0,
+    "Roundness": 0,
+    "Compactness": 0,
+    "ShapeFactor1": 0,
+    "ShapeFactor2": 0,
+    "ShapeFactor3": 0,
+    "ShapeFactor4": 0,
+    "Class": 0
+  },
+  "filas_duplicadas": 0,
+  "tipos_de_datos": {
+    "Area": "int64",
+    "Perimeter": "float64",
+    "MajorAxisLength": "float64",
+    "MinorAxisLength": "float64",
+    "AspectRatio": "float64",
+    "Eccentricity": "float64",
+    "ConvexArea": "int64",
+    "EquivDiameter": "float64",
+    "Extent": "float64",
+    "Solidity": "float64",
+    "Roundness": "float64",
+    "Compactness": "float64",
+    "ShapeFactor1": "float64",
+    "ShapeFactor2": "float64",
+    "ShapeFactor3": "float64",
+    "ShapeFactor4": "float64",
+    "Class": "object"
+  },
+  "clases": [
+    {
+      "clase": "DERMASON",
+      "registros": 3546,
+      "porcentaje": 26.18
+    },
+    {
+      "clase": "SIRA",
+      "registros": 2636,
+      "porcentaje": 19.46
+    },
+    {
+      "clase": "SEKER",
+      "registros": 2027,
+      "porcentaje": 14.97
+    },
+    {
+      "clase": "HOROZ",
+      "registros": 1860,
+      "porcentaje": 13.73
+    },
+    {
+      "clase": "CALI",
+      "registros": 1630,
+      "porcentaje": 12.04
+    },
+    {
+      "clase": "BARBUNYA",
+      "registros": 1322,
+      "porcentaje": 9.76
+    },
+    {
+      "clase": "BOMBAY",
+      "registros": 522,
+      "porcentaje": 3.85
+    }
+  ],
+  "razon_mayor_menor": 6.79
+}
