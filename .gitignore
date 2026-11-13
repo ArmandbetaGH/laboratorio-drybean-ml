@@ -1,0 +1,18 @@
+# Entornos y archivos locales (Windows/macOS/Linux)
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+Thumbs.db
+__MACOSX/
+.vscode/
+.idea/
+.coverage
+*.log
+.env
+.env.*
+!.env.example

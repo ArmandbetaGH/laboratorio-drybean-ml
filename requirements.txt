@@ -1,0 +1,13 @@
+# Dependencias directas. La versión de sklearn coincide con el proyecto original.
+# Python sugerido: 3.10-3.12. Crear un entorno virtual limpio por sistema operativo.
+numpy>=2.0,<2.3
+pandas>=2.3,<3
+matplotlib>=3.9,<4
+scikit-learn==1.6.1
+scipy>=1.13,<2
+joblib==1.5.3
+ucimlrepo==0.0.7
+nbformat>=5.9,<6
+ipykernel>=6.29,<7
+jupyterlab>=4.2,<5
+pytest>=8,<10

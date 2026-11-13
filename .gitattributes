@@ -1,0 +1,11 @@
+# Git normaliza textos de forma consistente entre Windows y macOS.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.yaml text eol=lf
+*.ipynb text eol=lf
+*.csv text eol=lf
+*.png binary
+*.jpg binary
+*.joblib binary
