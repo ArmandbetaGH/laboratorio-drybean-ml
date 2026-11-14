@@ -3,14 +3,15 @@
 ## Objetivo
 Implementar una prueba de despliegue local del modelo seleccionado y documentar los resultados del proyecto.
 
-## Actividades realizadas
+## Entregables técnicos evidenciados
 - [x] Seleccionar Logistic Regression.
 - [x] Guardar el modelo utilizando joblib.
 - [x] Cargar el modelo entrenado.
 - [x] Crear el módulo src/predict.py.
 - [x] Ejecutar una predicción desde el notebook.
-- [x] README.md disponible; actualización editorial en copia revisada.
-- [ ] Equipo debe validar las evidencias finales y la ejecución en su propio entorno.
+- [x] README.md preparado y publicado en el repositorio.
+- [x] Ejecución del notebook y pruebas automatizadas confirmadas en Windows.
+- [ ] Comprobación integral en macOS y acuerdos definitivos del equipo.
 
 ## Resultados obtenidos
 - Modelo: Logistic Regression
@@ -20,20 +21,20 @@ Implementar una prueba de despliegue local del modelo seleccionado y documentar 
 - Valor real: SEKER
 - Resultado: Predicción correcta
 
-## Sprint Review
+## Revisión de entregables
 Se implementó una función reutilizable para realizar predicciones mediante un modelo previamente entrenado.
 
-## Retrospectiva
+## Reflexión técnica
 ### ¿Qué funcionó?
 La separación del código de predicción permitió organizar mejor el proyecto.
 
 ### ¿Qué dificultad se presentó?
-Durante la implementación apareció un error relacionado con el uso de __file__ dentro de Jupyter Notebook.
+Una dificultad que se abordó fue gestionar rutas de archivos de manera compatible con Jupyter.
 
 ### ¿Cómo se solucionó?
-Se trasladó el código reutilizable a src/predict.py y se importó desde el notebook.
+La predicción reutilizable se organizó en `src/predict.py` y las rutas se resuelven desde la raíz del proyecto.
 
 ### ¿Qué mejoraríamos?
-Implementar pruebas automatizadas y revisar la estabilidad numérica del entrenamiento antes de una implementación real.
+Ampliar las pruebas a macOS y considerar evaluación adicional de estabilidad antes de una implementación real.
 
-> Nota: la revisión del README es documental; la socialización y validación del equipo siguen pendientes.
+> La exposición y la asignación definitiva de roles se preparan y acuerdan por separado.

@@ -1,6 +1,6 @@
 # Ruta de sustentación - Laboratorio 1 Dry Bean
 
-**Formato recomendado:** GitHub como pantalla principal. VS Code como apoyo para enseñar el notebook ejecutado y realizar una predicción local. **Duración objetivo: 11 minutos y 30 segundos**, dentro de la referencia de 10 a 12 minutos indicada por el profesor. **No se requieren diapositivas.**
+**Formato recomendado:** GitHub como pantalla principal. VS Code como apoyo para enseñar el notebook ejecutado y realizar una predicción local. **Duración objetivo: 11 minutos y 30 segundos**, con una distribución breve entre los tres integrantes. **La demostración se realizará sobre las evidencias del repositorio y el notebook.**
 
 ## Preparación antes de ingresar
 
@@ -15,7 +15,7 @@
 | Momento | Quién | Pantalla / ruta | Qué debe demostrar |
 |---|---|---|---|
 | 0:00–1:20 | Armando | GitHub → `README.md` | Problema de negocio, objetivo de clasificación y límites del prototipo |
-| 1:20–2:50 | Armando | GitHub → carpetas y `docs/crisp_dm/` | CRISP-DM como proceso de seis fases; TDSP como orden técnico y trazabilidad |
+| 1:20–2:50 | Armando | GitHub → carpetas y `docs/crisp_dm/README.md` | Índice de seis fases CRISP-DM con sus evidencias; TDSP como orden técnico |
 | 2:50–4:35 | Mónica | VS Code → notebook, celdas de carga, `df.info()`, nulos y duplicados | Dataset UCI, 13.611 filas, 17 columnas, siete clases y 68 duplicados |
 | 4:35–6:05 | Mónica | VS Code → distribución y separación `train_test_split` | 13.543 filas limpias, desbalance, partición 80/20 estratificada, prevención de fuga de información |
 | 6:05–8:30 | Andrés | VS Code → entrenamiento y tabla comparativa | Logistic Regression baseline, Random Forest alternativo, Accuracy y F1 macro |
@@ -23,7 +23,7 @@
 | 9:40–10:10 | Andrés | VS Code → prueba de predicción local | Modelo `.joblib` cargado y predicción local; aclarar que un acierto no es la métrica general |
 | 10:10–11:30 | Armando | GitHub → `scrum/`, Definition of Done y mapa de rúbrica | Backlog, sprints, estados verificables, criterios de terminado, aprendizajes y cierre |
 
-> En caso de atrasos, priorizar **metodologías, evidencia y conclusiones**. El profesor resaltó la estructura y la simulación Scrum más que una demostración extensa de entrenamiento.
+> En caso de atrasos, priorizar **metodologías, evidencia y conclusiones**. El recorrido prioriza las metodologías, la evidencia técnica y las conclusiones sobre un nuevo entrenamiento en vivo.
 
 ## Guion de transiciones (una frase)
 

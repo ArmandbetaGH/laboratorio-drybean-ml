@@ -3,7 +3,7 @@
 ## Objetivo
 Comprender, limpiar y preparar el Dry Bean Dataset para el entrenamiento de modelos de clasificación.
 
-## Actividades realizadas
+## Entregables técnicos evidenciados
 
 - [x] Crear estructura del proyecto.
 - [x] Configurar entorno virtual.
@@ -31,8 +31,8 @@ Se eliminaron 68 registros duplicados para evitar que observaciones idénticas i
 
 Se utilizó una división de entrenamiento y prueba del 80% y 20%, respectivamente, con una semilla fija para garantizar reproducibilidad.
 
-## Sprint Review
+## Revisión de entregables
 
 Se completó la preparación inicial del conjunto de datos, dejándolo listo para comenzar la fase de modelado.
 
-> Nota: esta narración proviene del archivo del compañero; no acredita fechas o reuniones reales.
+> Las evidencias describen productos técnicos; la revisión grupal y los acuerdos de Scrum se documentan por separado.

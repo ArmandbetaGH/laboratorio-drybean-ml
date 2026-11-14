@@ -31,7 +31,7 @@ clases y que las 16 entradas son características geométricas, no imágenes.
 - `df.isna().sum()` cuenta los nulos por columna.
 - `df.duplicated().sum()` cuenta filas idénticas.
 
-La salida histórica registra **0 valores faltantes y 68 filas duplicadas**
+La exploración del conjunto original registra **0 valores faltantes y 68 filas duplicadas**
 en el conjunto original. La decisión de eliminar duplicados se implementa
 más adelante, en la fase 3 (preparación, celda 12).
 
@@ -68,7 +68,7 @@ conjunto no tiene una distribución uniforme de clases.
 ## Evidencia que debemos presentar
 Notebook con las celdas de exploración, reporte de nulos y duplicados,
 distribución de clases y una interpretación breve de los resultados.
-El equipo debe reejecutar y corroborar las salidas del notebook en sus equipos.
+El equipo debe reejecutar y corroborar las salidas del notebook en el equipo donde se realice la demostración.
 
 ## Paso F. Dejar evidencia reproducible sin reentrenar
 Desde la carpeta raíz del proyecto, ejecutar:
@@ -90,7 +90,7 @@ La ruta se obtiene desde el archivo Python, sin depender de Windows o Mac.
 - `df["Class"].value_counts()`: muestra tamaños de las siete clases.
 - `to_csv()` y `json.dumps()`: guardan resultados para la sustentación y auditoría.
 
-**Separación de evidencias:** el notebook contiene las salidas históricas
+**Separación de evidencias:** el notebook contiene los resultados de exploración
 de la fuente original (13.611 filas, 68 duplicados), mientras el reporte
 recién generado analiza el archivo ya limpio (13.543 filas, 0 duplicados).
 No afirmar que se descargó de nuevo UCI solo por ejecutar este script.

@@ -37,7 +37,7 @@
 >
 > Para la etapa de despliegue local guardamos el modelo con joblib, lo cargamos de nuevo y realizamos una predicción sobre una muestra de prueba. La función `src/predict.py` permite reutilizar este comportamiento, siempre con las 16 columnas esperadas. Es una demo local reproducible, no una API ni un sistema desplegado en producción.
 >
-> Los resultados son prometedores para el ejercicio académico, pero antes de producción sería necesario validar con nuevos datos y con el proceso real de la empresa.
+> Los resultados obtenidos permiten una demostración técnica del prototipo, pero antes de producción sería necesario validar con nuevos datos y con el proceso real de la empresa.
 
 **Transición:** «Armando cerrará con evidencias metodológicas y aprendizajes».
 

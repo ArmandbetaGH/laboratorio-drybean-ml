@@ -1,26 +1,26 @@
-# Integrantes y roles Scrum ML - propuesta pendiente de acuerdo
+# Equipo y distribución propuesta de funciones Scrum ML
 
-**Integrantes informados por el equipo para la sustentación:** Mónica Giraldo, Andrés Hernández y Armando. **No confundir rol en la exposición con rol Scrum, ni adjudicar trabajo previo sin confirmar.**
+**Integrantes:** Mónica Giraldo, Andrés Hernández y Armando José Betancourt.
 
-El profesor recomienda cuatro funciones, no necesariamente cuatro personas. Al ser tres, una persona puede asumir más de una función si así se acuerda.
+Como el equipo tiene tres personas, se propone combinar funciones. **La asignación siguiente debe aprobarse entre los tres** y no constituye una atribución retrospectiva de autoría.
 
-| Integrante | Rol Scrum propuesto (NO confirmado) | Responsabilidad a acordar | Evidencia que debe conocer |
-|---|---|---|---|
-| Mónica Giraldo | Product Owner + análisis de datos | Validar objetivo y criterios de aceptación; explicar EDA/preparación | `docs/crisp_dm/`, notebook fase 2/3 |
-| Andrés Hernández | ML Engineer | Modelado, métricas, inferencia local | Notebook modelos, matrices, `.joblib` |
-| Armando | Scrum Master + estructura TDSP | Seguimiento/backlog, GitHub, integración de evidencias | `scrum/`, README, repo |
+| Integrante | Función propuesta | Responsabilidad prevista |
+|---|---|---|
+| Mónica Giraldo | Product Owner + Data Analyst | Priorizar valor, validar criterios del problema y revisar preparación de datos. |
+| Andrés Hernández | ML Engineer | Explicar modelos, evaluación y predicción local. |
+| Armando José Betancourt | Scrum Master + coordinación TDSP | Seguimiento del backlog, integración, organización y trazabilidad del repositorio. |
 
-**Aprobación de estos roles:** PENDIENTE DE CONFIRMACIÓN ENTRE LOS TRES. La tabla es una forma de organizar el proyecto desde ahora, no afirma que se desarrolló así en el pasado. Quien hizo código o documentación originalmente puede ser diferente de quien lo presenta.
+## Acuerdo del equipo
 
-## Registro de trabajo real a completar
-- Fecha de revisión entre los integrantes: PENDIENTE.
-- Asignaciones efectivamente acordadas: PENDIENTE.
-- Actividades de cada integrante verificadas: PENDIENTE.
-- Decisiones, dificultades y ajustes de cada sprint: PENDIENTE.
+- Fecha de definición: **pendiente**.
+- Preferencias manifestadas y decisiones: **pendiente**.
+- Distribución efectiva de trabajo y evidencias: **pendiente**.
+- Validación de actividades y retrospectiva: **pendiente**.
 
-## Exposición (independiente de los roles Scrum)
-- Armando: apertura y cierre metodológico.
-- Mónica Giraldo: datos y preparación.
-- Andrés Hernández: modelado, evaluación, demo local.
+## Distribución oral sugerida
 
-Guion sugerido: [`docs/GUION_SUSTENTACION_3_PERSONAS.md`](../docs/GUION_SUSTENTACION_3_PERSONAS.md).
+- **Armando:** problema, enfoque metodológico, organización y cierre.
+- **Mónica:** exploración, calidad y preparación de datos.
+- **Andrés:** entrenamiento, comparación, interpretación y predicción local.
+
+Esta distribución de la presentación es independiente de los roles Scrum.

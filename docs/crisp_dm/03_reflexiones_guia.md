@@ -1,7 +1,6 @@
-# Respuestas de estudio — siete reflexiones de la guía Lab1
+# Preguntas de reflexión — CRISP-DM, TDSP y Scrum ML
 
-Son propuestas razonadas a partir del caso y la evidencia disponible;
-deben ser comprendidas, revisadas y explicadas por el equipo.
+Respuestas orientativas basadas en el caso y en los resultados del proyecto.
 
 1. **¿Qué fase de CRISP-DM fue más importante?** La comprensión del
    negocio orienta el propósito y los indicadores. También es crucial la

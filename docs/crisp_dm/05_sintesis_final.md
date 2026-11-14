@@ -1,25 +1,30 @@
-# Síntesis y decisiones - seis fases CRISP-DM
+# Síntesis del proyecto según CRISP-DM
 
 ## 1. Comprensión del negocio
-La empresa agrícola simulada busca apoyar la identificación de variedades de frijol seco. No existen pruebas reales de ahorro, tiempo o calidad de producción. Objetivo técnico: clasificar siete variedades a partir de 16 rasgos geométricos.
+El caso simula una empresa agrícola que busca apoyar la identificación de variedades de frijol seco. El objetivo técnico es clasificar siete variedades a partir de 16 características geométricas; no se midieron beneficios operativos reales.
 
 ## 2. Comprensión de los datos
-Fuente UCI Dry Bean Dataset ID 602: 13.611 instancias, 17 columnas (16 numéricas y `Class`). El notebook original registró cero nulos y 68 registros duplicados. La distribución es desigual: DERMASON 3.546 registros limpios frente a BOMBAY 522.
+El Dry Bean Dataset de UCI (ID 602) contiene 13.611 registros, 16 variables predictoras numéricas y una categoría objetivo (`Class`). Se observaron cero nulos y 68 duplicados exactos.
 
-## 3. Preparación de datos
-Eliminar duplicados exactos (13.543 filas), separar `X` y `y`, y particionar train/test 80/20 con semilla 42 y estratificación. Para la regresión logística el escalamiento ocurre dentro de un `Pipeline` ajustado sobre entrenamiento; evita fuga de información del conjunto de prueba.
+## 3. Preparación
+Se eliminaron duplicados (13.543 filas finales), se separaron variables predictoras y objetivo y se realizó una partición 80/20 estratificada con `random_state=42`. El escalamiento de regresión logística está dentro del `Pipeline`, ajustado solo con entrenamiento.
 
 ## 4. Modelado
-Regresión logística con StandardScaler es baseline. Random Forest es alternativa con 200 árboles y pesos por clase balanceados. No se debe deducir de antemano que el modelo complejo será superior.
+Se entrenaron regresión logística como modelo base y Random Forest (200 árboles, `class_weight="balanced"`) como alternativa.
 
 ## 5. Evaluación
-Las salidas históricas del notebook registran Logistic Regression Accuracy 91,95 %, F1 macro 93,06 % y Random Forest Accuracy 91,81 %, F1 macro 92,92 %. Se propone el baseline por desempeño ligeramente mejor y simplicidad. El resultado depende del conjunto de prueba, versiones y configuración; no demuestra rendimiento operativo real.
+
+| Modelo | Accuracy | F1 macro |
+|---|---:|---:|
+| Logistic Regression | 91,95 % | 93,06 % |
+| Random Forest | 91,81 % | 92,92 % |
+
+Las cifras son las registradas en el notebook. Regresión logística es el candidato por su pequeña ventaja y menor complejidad. Las matrices evidencian confusiones entre DERMASON y SIRA. No se infiere superioridad estadística concluyente a partir de una única partición.
 
 ## 6. Despliegue local
-Se guarda un modelo `.joblib`, se vuelve a cargar y se usa una muestra de prueba para inferencia. Esto constituye una demo local (no API ni producción). `src/predict.py` encapsula la predicción. Los `.joblib` se cargan solo desde fuentes confiables.
+El modelo seleccionado se guarda en formato `.joblib` y puede recuperarse para predecir una nueva observación con las 16 variables requeridas. La inferencia local fue comprobada en Windows; no se desarrolló una API ni un sistema en producción.
 
-## Limitaciones y siguientes pasos
-- El notebook ha sido ejecutado parcialmente en Windows por el equipo; falta comprobación completa de principio a fin.
-- La versión de sklearn declarada es 1.6.1; revalidar el artefacto con esta versión al presentarlo.
-- No tenemos una evaluación externa ni mediciones empresariales.
-- Validación cruzada e hiperparámetros son extensiones opcionales en la guía del profesor.
+## Limitaciones
+- No existe validación externa con muestras de una operación agrícola real.
+- La reproducción en macOS permanece por comprobar.
+- Validación cruzada y ajuste de hiperparámetros se consideran extensiones futuras, no resultados de este ejercicio.

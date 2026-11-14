@@ -1,6 +1,6 @@
 # CRISP-DM — Fase 1: Comprensión del negocio
 
-## Contexto (caso simulado por el profesor)
+## Contexto del proyecto (caso simulado)
 Una empresa agrícola realiza parcialmente una clasificación manual de
 variedades de frijol y desea estudiar si el reconocimiento automático de
 variedades podría apoyar el control de calidad.
@@ -57,9 +57,3 @@ solución de control de calidad desplegada en una empresa.
 - Una buena puntuación en una partición no asegura generalización fuera
   de muestra, estabilidad temporal o impacto operativo.
 - Las muestras y sus etiquetas provienen del repositorio académico.
-
-## Fuentes del ejercicio
-- `Lab1.pdf`, páginas 1–3 y 15–18 (enunciado, evaluación, entregables).
-- Transcripción de la clase del 7/11: énfasis metodológico, repositorio.
-- Transcripción de la clase del 13/11: socialización, no requiere API.
-- https://archive.ics.uci.edu/dataset/602/dry+bean+dataset

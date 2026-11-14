@@ -3,10 +3,10 @@
 **Asignatura:** Gestión de Proyectos en IA y Ciencia de Datos  
 **Laboratorio 1:** Clasificación de variedades de frijol  
 **Integrantes que presentarán:** Mónica Giraldo, Andrés Hernández y Armando  
-**Base:** Lab1 del profesor, plan sugerido de Scrum ML y el código existente.  
+**Base:** enunciado del Laboratorio 1, planificación de Scrum ML y resultados del repositorio.  
 **Nota de actualización:** el equipo confirmó la ejecución completa del notebook en Windows, siete pruebas automatizadas aprobadas y una predicción SEKER correcta al cargar el modelo guardado con scikit-learn 1.6.1. Quedan pendientes la ejecución en Mac y la confirmación democrática de roles Scrum ML.
 
-## ¿Qué pide el profesor?
+## Requisitos y criterios de evaluación
 El laboratorio evalúa tres metodologías: CRISP-DM (seis fases), TDSP (organización técnica, trazabilidad, reproducibilidad) y Scrum ML (roles, backlog, sprints, tablero y Definition of Done). También exige carga, exploración, limpieza, dos modelos, métricas, matriz de confusión, modelo guardado y conclusiones. No exige API, Airflow, MLflow ni Docker para el primer laboratorio.
 
 **Rúbrica (100 puntos):** CRISP-DM 20; TDSP 15; Scrum ML 15; código reproducible 20; evaluación 15; interpretación y conclusiones 15. Ver `docs/MAPA_RUBRICA_EVIDENCIAS.md`.
@@ -21,8 +21,8 @@ El laboratorio evalúa tres metodologías: CRISP-DM (seis fases), TDSP (organiza
 ## 2. Comprender los datos (fase 2)
 - **Fuente original:** UCI Dry Bean Dataset (ID 602): 13.611 filas, 16 variables predictoras, 1 variable objetivo (`Class`), siete clases.
 - **Variables:** `Area`, `Perimeter`, `MajorAxisLength`, `MinorAxisLength`, `AspectRatio`, `Eccentricity`, `ConvexArea`, `EquivDiameter`, `Extent`, `Solidity`, `Roundness`, `Compactness` y cuatro `ShapeFactor`.
-- **Tipos:** 2 enteras, 14 decimales, `Class` categórica. En el dataset descargado no se reportaron nulos.
-- **Duplicados:** el notebook original identificó 68; el conjunto limpio tiene 13.543 filas y cero duplicados.
+- **Tipos:** 2 enteras, 14 decimales, `Class` categórica. En el conjunto original no se reportaron nulos.
+- **Duplicados:** el notebook registró 68; el conjunto limpio tiene 13.543 filas y cero duplicados.
 - **Desbalance:** DERMASON 3.546 (26,18 %), SIRA 2.636 (19,46 %), SEKER 2.027 (14,97 %), HOROZ 1.860 (13,73 %), CALI 1.630 (12,04 %), BARBUNYA 1.322 (9,76 %), BOMBAY 522 (3,85 %). Proporción mayor/menor ≈ 6,79.
 - **Comandos:** `df.shape`, `df.info()`, `df.describe()`, `df.isna().sum()`, `df.duplicated().sum()`, `df['Class'].value_counts()`.
 - **Por qué importa F1 macro:** el promedio da igual peso a cada clase y permite ver un resultado global menos dominado por la clase más numerosa. No reemplaza métricas individuales.
@@ -74,14 +74,14 @@ Estructurar y conservar: `data/raw` (original, al descargarlo), `data/processed`
 - **Retrospectiva:** qué funcionó, qué fue difícil y qué cambiaríamos. NO declarar reuniones que no ocurrieron.
 - **Roles Scrum sugeridos:** Product Owner, Scrum Master y capacidades de ingeniería de datos/ML. Equipo de tres puede compartir funciones, si se acuerda y se documenta.
 
-## 9. Preguntas posibles del profesor (respuestas breves)
+## 9. Preguntas para preparar la sustentación
 1. **¿Por qué CRISP-DM?** Para conectar problema, datos, preparación, modelado, evaluación e inferencia local.
 2. **¿Por qué no entrenar con todo el dataset?** Necesitamos prueba independiente sobre observaciones no usadas para ajustar el modelo.
 3. **¿Por qué eliminar duplicados antes del split?** Evita que filas idénticas aparezcan simultáneamente en entrenamiento y prueba.
 4. **¿Por qué `stratify`?** Mantiene proporciones de variedades en ambos subconjuntos.
 5. **¿Por qué escalar regresión logística?** Favorece optimización cuando las variables usan escalas muy diferentes; `Pipeline` evita fuga de datos.
 6. **¿Por qué F1 macro?** Considera todas las clases con el mismo peso; Accuracy puede ocultar fallos en clases escasas.
-7. **¿Qué clases se confunden más?** DERMASON y SIRA en las salidas originales. Ver la matriz antes de afirmarlo en una nueva corrida.
+7. **¿Qué clases se confunden más?** DERMASON y SIRA en las matrices guardadas. Ver la matriz antes de afirmarlo en una nueva corrida.
 8. **¿Por qué se eligió Logistic Regression?** Tuvo F1 macro algo mayor y es más simple; la ventaja es pequeña.
 9. **¿Por qué no API?** La guía pide una demostración local con modelo guardado; una API se estudia después.
 10. **¿Qué falta para producción?** Datos operativos, validación externa, costos de error, mantenimiento, seguridad y seguimiento.

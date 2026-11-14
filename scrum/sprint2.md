@@ -4,7 +4,7 @@
 
 Entrenar, evaluar y comparar modelos de clasificación para identificar la variedad de fríjol a partir de características geométricas.
 
-## Actividades realizadas
+## Entregables técnicos evidenciados
 
 - [x] Entrenar Logistic Regression como modelo baseline.
 - [x] Entrenar Random Forest como modelo alternativo.
@@ -33,13 +33,13 @@ Entrenar, evaluar y comparar modelos de clasificación para identificar la varie
 
 Se selecciona Logistic Regression como modelo candidato para el despliegue local debido a su desempeño ligeramente superior y su menor complejidad relativa.
 
-## Sprint Review
+## Revisión de entregables
 
 Se completaron los experimentos de modelado y la evaluación comparativa.
 
 Los resultados permiten avanzar a la etapa de despliegue local.
 
-## Retrospectiva
+## Reflexión técnica
 
 ### ¿Qué funcionó?
 La preparación de los datos y la implementación de dos modelos permitieron obtener resultados satisfactorios.
@@ -53,4 +53,4 @@ Realizar validación cruzada y evaluar configuraciones adicionales para comproba
 ### ¿Qué aprendimos?
 Que un modelo más complejo no necesariamente obtiene mejores resultados que uno más sencillo.
 
-> Nota: los resultados están registrados en las salidas del notebook original; verificar advertencias numéricas antes de cerrar la reproducción.
+> Los resultados corresponden a la evaluación guardada en el notebook. Las métricas de futuras ejecuciones deben verificarse antes de reemplazarlas.

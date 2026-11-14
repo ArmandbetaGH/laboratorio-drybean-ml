@@ -15,11 +15,11 @@ Una empresa agrícola ficticia busca explorar la clasificación automatizada de 
 
 | Enfoque | Aplicación en este laboratorio | Evidencia |
 |---|---|---|
-| **CRISP-DM** | Comprender negocio y datos; preparar, modelar, evaluar y demostrar uso local | [Notebook](notebooks/01_laboratorio_drybean.ipynb) · [Documentación de fases](docs/crisp_dm/) |
+| **CRISP-DM** | Comprender negocio y datos; preparar, modelar, evaluar y demostrar uso local | [Notebook](notebooks/01_laboratorio_drybean.ipynb) · [Seis fases de CRISP-DM](docs/crisp_dm/README.md) |
 | **TDSP** | Separación de datos, código, modelos, resultados y pruebas; control de versiones | Carpetas del repositorio · `requirements.txt` · historial Git |
 | **Scrum ML** | Product Backlog, tablero, tres sprints, definición de terminado y retrospectiva | [Carpeta Scrum](scrum/) |
 
-Los roles personales y la retrospectiva deben reflejar los acuerdos y hechos confirmados por los integrantes; no se deben confundir los **roles Scrum** con las **partes de la exposición**.
+La documentación de Scrum ML distingue entre el plan de trabajo, las evidencias técnicas y los acuerdos de equipo pendientes de confirmación.
 
 ## 3. Datos y preparación
 
@@ -37,7 +37,7 @@ Los roles personales y la retrospectiva deben reflejar los acuerdos y hechos con
 
 Las clases no están uniformemente distribuidas: DERMASON tiene 3.546 registros en el CSV limpio (26,18 %) y BOMBAY 522 (3,85 %). Por eso se compara **F1 macro** junto con **Accuracy** y métricas por clase.
 
-`data/processed/drybean_clean.csv` contiene el conjunto limpio. El notebook descarga el original de UCI; `data/raw/` no debe describirse como completo hasta que efectivamente se ejecute el script `scripts/guardar_fuente_original.py` y se conserve su salida.
+`data/processed/drybean_clean.csv` contiene el conjunto limpio. La fuente original se consulta desde UCI durante la ejecución del notebook. La carpeta `data/raw/` está preparada para conservar, cuando se genere, una copia local trazable de esa fuente.
 
 ## 4. Modelado y resultados
 
@@ -63,7 +63,7 @@ outputs/reports/                  Matrices de confusión e informes de calidad
 src/                              Funciones reutilizables
 scripts/                          Scripts de validación y trazabilidad
 tests/                            Pruebas automatizadas
-docs/crisp_dm/                     Evidencias de CRISP-DM
+docs/crisp_dm/                     Índice de las seis fases y material de apoyo
 scrum/                            Backlog, tablero, sprints y Definition of Done
 ```
 
@@ -92,16 +92,17 @@ python scripts/verificar_modelo_guardado.py
 
 Para ejecutar el notebook, abrir [`notebooks/01_laboratorio_drybean.ipynb`](notebooks/01_laboratorio_drybean.ipynb) en VS Code, seleccionar el kernel del `.venv`, reiniciarlo y ejecutar todas las celdas. La descarga UCI necesita conexión a Internet. No subir `.venv` al repositorio. Abrir archivos `.joblib` únicamente de fuentes confiables.
 
-## 7. Estado de las verificaciones
+## 7. Estado de validación técnica
 
-- **Windows:** notebook completo ejecutado sin errores, según la revisión realizada por el equipo; 7 pruebas `pytest` aprobadas; generación de reportes de calidad exitosa.
-- **Inferencia local:** `scikit-learn 1.6.1`; modelo cargado; una muestra fue clasificada como SEKER y la etiqueta real de esa muestra también era SEKER. Esto no reemplaza la evaluación sobre todo el conjunto de prueba.
-- **GitHub:** cambios publicados en la rama `main` (commit `2d1dbcc` anterior a esta edición del README).
-- **Pendiente de comprobación:** instalación y ejecución integral en el Mac del equipo; confirmar roles y retrospectiva reales; conservar copia del origen UCI si se decide exigirla como evidencia.
+- **Entorno Windows:** notebook ejecutado de principio a fin según la comprobación del equipo; siete pruebas automatizadas aprobadas y reportes de calidad generados.
+- **Inferencia:** modelo guardado cargado con `scikit-learn 1.6.1`; una muestra fue clasificada como SEKER, coincidiendo con su etiqueta real. Este resultado individual no sustituye la evaluación de modelos.
+- **Colaboración:** repositorio versionado en GitHub. La reproducibilidad en macOS está pendiente de comprobar y la asignación definitiva de roles Scrum requiere acuerdo de los tres integrantes.
+
+Los detalles de las verificaciones y las tareas pendientes figuran en [Validación del proyecto](docs/VALIDACION_FINAL.md).
 
 ## 8. Guía para la sustentación (10–12 minutos)
 
-El profesor autorizó presentar directamente desde GitHub o el código. La ruta propuesta utiliza **GitHub como hilo conductor** y **VS Code como apoyo** para mostrar el notebook ejecutado o una predicción, sin requerir diapositivas:
+La demostración se propone con **GitHub como hilo conductor** y **VS Code como apoyo** para mostrar el notebook ejecutado y la predicción local:
 
 1. Problema de negocio y objetivo; este README.
 2. CRISP-DM y organización TDSP; `docs/crisp_dm/` y carpetas principales.
@@ -117,5 +118,3 @@ El profesor autorizó presentar directamente desde GitHub o el código. La ruta 
 - [Guion propuesto para tres integrantes](docs/GUION_SUSTENTACION_3_PERSONAS.md)
 - [PDF para compartir](docs/material_presentacion/)
 - [Validación técnica y pendientes](docs/VALIDACION_FINAL.md)
-
-**Referencia del laboratorio:** guía docente *Laboratorio práctico de Machine Learning con datos reales: CRISP-DM + TDSP + Scrum ML usando Dry Bean Dataset*, de Juan Manuel Núñez Velasco.

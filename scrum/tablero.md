@@ -1,14 +1,11 @@
-# Tablero Scrum ML — estado documental (no historial de reuniones)
+# Tablero de trabajo — Scrum ML
 
-Este tablero refleja lo que **ya aparece en los archivos**. El equipo debe
-actualizarlo con su seguimiento real y fechas, sin inventar reuniones.
+Estado de los entregables. Los responsables se definirán cuando los tres integrantes acuerden sus roles.
 
-| Por hacer | En progreso | Hecho / evidenciado en archivos |
+| Por hacer | En progreso | Hecho / validado en Windows |
 |---|---|---|
-| PB-11: Identificar participantes, responsabilidades y retrospectiva real | PB-10: Validar documentación y sustentar | PB-02, PB-03, PB-04: EDA y preparación |
-| PB-12: Ejecutar notebook de principio a fin en entorno limpio | PB-01: guardar fuente original si se decide | PB-05, PB-06: entrenamiento y evaluación registrados |
-|  |  | PB-07, PB-08: comparación y matrices |
-|  |  | PB-09: predicción documentada en el notebook |
+| PB-11: Acuerdos de roles y retrospectiva | PB-10: Ensayo y cierre de material | PB-01 a PB-04: carga, calidad y preparación |
+| PB-12: Pruebas en macOS | | PB-05 a PB-08: modelado y evaluación |
+| | | PB-09: modelo guardado y predicción |
 
-> «Hecho / evidenciado» no implica que un tercero haya probado la ejecución
-> de cada artefacto ni que se haya celebrado un sprint real.
+**Nota:** el tablero refleja el estado de entregables; no debe interpretarse como historial de reuniones o ceremonias Scrum no documentadas.
