@@ -5,7 +5,7 @@
 **Carácter:** distribución propuesta de intervención, **no atribución de autoría o roles Scrum**. Ajustar nombres y responsabilidades si el equipo lo decide.
 
 ## 0:00-2:50 - Armando | Introducción, negocio y gestión
-**Mostrar:** `README.md`, `docs/crisp_dm/01_comprension_negocio.md`, `docs/MAPA_RUBRICA_EVIDENCIAS.md` y carpetas del repositorio.
+**Mostrar:** GitHub, `README.md`, `docs/crisp_dm/01_comprension_negocio.md`, carpetas del repositorio; para la transición `docs/RUTA_SUSTENTACION_PROFESOR.md`.
 
 > Buenas tardes, profesor. Somos el equipo integrado por Mónica Giraldo, Andrés Hernández y Armando. Presentamos el Laboratorio 1 de clasificación de variedades de frijol usando CRISP-DM, TDSP y Scrum ML. El caso plantea una empresa agrícola que busca apoyar una clasificación parcialmente manual. Nuestro objetivo técnico es determinar la variedad del grano a partir de 16 medidas geométricas, no procesar directamente las imágenes ni afirmar mejoras reales de costos.
 >
@@ -44,7 +44,7 @@
 ## 10:10-11:30 - Armando | Cierre
 **Mostrar:** `scrum/definition_of_done.md`, `scrum/retrospectiva.md`, `docs/VALIDACION_FINAL.md`.
 
-> Como conclusión, CRISP-DM nos permitió estructurar las decisiones, TDSP mantener un repositorio ordenado y Scrum ML visibilizar tareas, responsables y entregables. Lo importante no fue buscar un número alto sin explicación, sino poder demostrar de dónde vienen los datos, qué se hizo con ellos, por qué se compararon dos modelos y cómo reutilizar el elegido. Antes del cierre final validaremos la ejecución integral del notebook, la carga del modelo en nuestro entorno y los acuerdos reales del equipo. Muchas gracias; quedamos atentos a las preguntas.
+> Como conclusión, CRISP-DM nos permitió estructurar las decisiones, TDSP mantener un repositorio ordenado y Scrum ML visibilizar tareas, responsables y entregables. Lo importante no fue buscar un número alto sin explicación, sino poder demostrar de dónde vienen los datos, qué se hizo con ellos, por qué se compararon dos modelos y cómo reutilizar el elegido. En Windows ya ejecutamos el notebook completo, aprobamos siete pruebas automatizadas y verificamos la carga del modelo con una predicción SEKER coincidente con la etiqueta real. Queda por comprobar la ejecución en Mac y documentar los roles y acuerdos reales del equipo. Muchas gracias; quedamos atentos a las preguntas.
 
 ## Ruta de pantallas recomendada
 1. Inicio: README y carpetas principales.
@@ -56,7 +56,10 @@
 7. `scrum/` y mapa de rúbrica.
 
 ## Cuidados antes de presentar
-- Si ya ejecutaron íntegramente el notebook y validaron los sprints, actualizar las frases «pendiente» por hechos confirmados.
-- Si la ejecución arroja métricas ligeramente distintas, usar las de esa ejecución y registrar versiones; no mezclar cifras históricas.
+- Ya se comprobó la ejecución del notebook y el modelo en Windows. Antes de exponer, validar los roles y la retrospectiva entre los tres y corregir cualquier sección aún marcada como pendiente.
+- Si la ejecución final arroja métricas ligeramente distintas, usar las de esa ejecución y registrar versiones; no mezclar cifras históricas.
 - Si alguien pregunta quién fue Product Owner o Scrum Master, decir solo lo acordado y documentado por el equipo, nunca inventarlo.
 - Ensayar una vez con cronómetro: total propuesto 11 min 30 s. Cada integrante debe saber navegar su bloque.
+
+
+**Ruta de pantallas detallada:** [`docs/RUTA_SUSTENTACION_PROFESOR.md`](RUTA_SUSTENTACION_PROFESOR.md). GitHub como hilo conductor; VS Code para las salidas ya ejecutadas.

@@ -4,7 +4,7 @@
 **Laboratorio 1:** Clasificación de variedades de frijol  
 **Integrantes que presentarán:** Mónica Giraldo, Andrés Hernández y Armando  
 **Base:** Lab1 del profesor, plan sugerido de Scrum ML y el código existente.  
-**Nota:** esta guía distingue entre resultados históricos del notebook, verificaciones locales y pendientes.
+**Nota de actualización:** el equipo confirmó la ejecución completa del notebook en Windows, siete pruebas automatizadas aprobadas y una predicción SEKER correcta al cargar el modelo guardado con scikit-learn 1.6.1. Quedan pendientes la ejecución en Mac y la confirmación democrática de roles Scrum ML.
 
 ## ¿Qué pide el profesor?
 El laboratorio evalúa tres metodologías: CRISP-DM (seis fases), TDSP (organización técnica, trazabilidad, reproducibilidad) y Scrum ML (roles, backlog, sprints, tablero y Definition of Done). También exige carga, exploración, limpieza, dos modelos, métricas, matriz de confusión, modelo guardado y conclusiones. No exige API, Airflow, MLflow ni Docker para el primer laboratorio.
@@ -92,8 +92,8 @@ Estructurar y conservar: `data/raw` (original, al descargarlo), `data/processed`
 - Abrir `README.md`, `docs/MAPA_RUBRICA_EVIDENCIAS.md`, `scrum/tablero.md`, notebook y `outputs/reports/`.
 - Ensayar sin diapositivas, usando código y evidencias en GitHub o VS Code.
 - Cada integrante debe poder explicar su parte y contestar al menos dos preguntas de otra sección.
-- No confundir «6 pytest pasaron» con «notebook íntegro validado».
+- La comprobación de **7 pruebas pytest** y la **ejecución íntegra del notebook en Windows** son evidencias distintas; ambas fueron confirmadas. La prueba en Mac sigue pendiente.
 - Consultar el guion: `docs/GUION_SUSTENTACION_3_PERSONAS.md`.
 
 ## 11. Comprobaciones antes de compartir la versión definitiva
-Consultar `docs/VALIDACION_FINAL.md`. El archivo `.joblib` existe y se cargó en un entorno de revisión con sklearn diferente, con advertencias de versión; en Windows debe probarse específicamente con `scikit-learn==1.6.1`. No alterar ni ocultar advertencias originales sin verificarlas.
+Consultar `docs/VALIDACION_FINAL.md`. En Windows, el archivo `.joblib` se cargó con `scikit-learn==1.6.1` y produjo la clase SEKER, coincidente con la etiqueta real de la muestra. Todavía corresponde comprobar portabilidad en Mac y registrar los roles Scrum acordados realmente.
