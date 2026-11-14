@@ -19,7 +19,7 @@ Una empresa agrícola ficticia busca explorar la clasificación automatizada de 
 | **TDSP** | Separación de datos, código, modelos, resultados y pruebas; control de versiones | Carpetas del repositorio · `requirements.txt` · historial Git |
 | **Scrum ML** | Product Backlog, tablero, tres sprints, definición de terminado y retrospectiva | [Carpeta Scrum](scrum/) |
 
-La documentación de Scrum ML distingue entre el plan de trabajo, las evidencias técnicas y los acuerdos de equipo pendientes de confirmación.
+La documentación Scrum ML contiene los roles definidos para los tres integrantes, el backlog, los sprints y una retrospectiva de aprendizajes. No se presentan reuniones no registradas como si hubieran ocurrido.
 
 ## 3. Datos y preparación
 
@@ -72,3 +72,5 @@ scrum/                            Backlog, tablero, sprints y Definition of Done
 ## 6. Rúbrica y matriz de evidencias — Laboratorio 1
 
 La correspondencia entre los criterios de evaluación, los resultados y los archivos verificables se presenta en la [matriz de evidencias](docs/MAPA_RUBRICA_EVIDENCIAS.md).
+
+**Entregables académicos:** [notebook ejecutado](notebooks/01_laboratorio_drybean.ipynb) · [reporte breve](docs/REPORTE_BREVE_LABORATORIO_1.md) · [evidencias Scrum ML](scrum/).

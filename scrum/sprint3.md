@@ -11,7 +11,9 @@ Implementar una prueba de despliegue local del modelo seleccionado y documentar 
 - [x] Ejecutar una predicción desde el notebook.
 - [x] README.md preparado y publicado en el repositorio.
 - [x] Ejecución del notebook y pruebas automatizadas confirmadas en Windows.
-- [ ] Comprobación integral en macOS y acuerdos definitivos del equipo.
+- [x] Roles y responsabilidades documentados para el equipo de tres personas.
+- [x] Retrospectiva de aprendizajes documentada.
+- [ ] Comprobación integral en macOS y ensayo grupal.
 
 ## Resultados obtenidos
 - Modelo: Logistic Regression
@@ -37,4 +39,4 @@ La predicción reutilizable se organizó en `src/predict.py` y las rutas se resu
 ### ¿Qué mejoraríamos?
 Ampliar las pruebas a macOS y considerar evaluación adicional de estabilidad antes de una implementación real.
 
-> La exposición y la asignación definitiva de roles se preparan y acuerdan por separado.
+> Los roles ya se encuentran definidos en `scrum/roles_equipo.md`. El ensayo grupal y la reproducción completa en macOS permanecen pendientes.

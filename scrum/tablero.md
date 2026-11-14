@@ -1,11 +1,13 @@
 # Tablero de trabajo — Scrum ML
 
-Estado de los entregables. Los responsables se definirán cuando los tres integrantes acuerden sus roles.
+Estado de los entregables a partir de las evidencias técnicas disponibles y los roles definidos para el laboratorio.
 
-| Por hacer | En progreso | Hecho / validado en Windows |
+| Por hacer | En progreso | Hecho / documentado |
 |---|---|---|
-| PB-11: Acuerdos de roles y retrospectiva | PB-10: Ensayo y cierre de material | PB-01 a PB-04: carga, calidad y preparación |
-| PB-12: Pruebas en macOS | | PB-05 a PB-08: modelado y evaluación |
-| | | PB-09: modelo guardado y predicción |
+| PB-12: reproducir en macOS | — | PB-01 a PB-04: carga, calidad y preparación |
+| PB-13: ensayo grupal | — | PB-05 a PB-08: modelado y evaluación |
+| | | PB-09: inferencia local en Windows |
+| | | PB-10: documentación y publicación GitHub |
+| | | PB-11: roles y retrospectiva documental |
 
-**Nota:** el tablero refleja el estado de entregables; no debe interpretarse como historial de reuniones o ceremonias Scrum no documentadas.
+**Criterio de lectura:** «Hecho» significa que existe evidencia o documentación. Este tablero no constituye un registro de dailies, reuniones de planeación o reviews que no hayan sido documentadas.

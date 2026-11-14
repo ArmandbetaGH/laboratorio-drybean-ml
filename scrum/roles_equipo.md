@@ -1,18 +1,17 @@
-# Equipo y distribución propuesta de funciones Scrum ML
+# Roles y responsabilidades — Scrum ML
 
-**Integrantes:** Mónica Giraldo, Andrés Hernández y Armando José Betancourt.
+**Laboratorio 1:** clasificación del Dry Bean Dataset.  
+**Equipo:** Mónica Giraldo, Andrés Hernández y Armando José Betancourt Millán.  
+**Asignación definida para este laboratorio:** 13 de noviembre de 2026.
 
-Como el equipo tiene tres personas, se propone combinar funciones. **La asignación siguiente debe aprobarse entre los tres** y no constituye una atribución retrospectiva de autoría.
+Para adaptar Scrum ML a un equipo de tres integrantes se combinan funciones complementarias:
 
-| Integrante | Función propuesta | Responsabilidad prevista |
+| Integrante | Rol asignado | Responsabilidades dentro del proyecto |
 |---|---|---|
-| Mónica Giraldo | Product Owner + Data Analyst | Priorizar valor, validar criterios del problema y revisar preparación de datos. |
-| Andrés Hernández | ML Engineer | Explicar modelos, evaluación y predicción local. |
-| Armando José Betancourt | Scrum Master + coordinación TDSP | Seguimiento del backlog, integración, organización y trazabilidad del repositorio. |
+| **Mónica Giraldo** | **Product Owner + Data Analyst** | Orientar el objetivo y los criterios de aceptación del prototipo; supervisar comprensión, exploración, calidad y preparación de datos. |
+| **Andrés Hernández** | **ML Engineer** | Supervisar entrenamiento, comparación y evaluación de modelos; interpretar métricas y matrices de confusión; verificar la inferencia local. |
+| **Armando José Betancourt Millán** | **Scrum Master + coordinación TDSP** | Organizar y dar seguimiento al backlog; mantener la trazabilidad documental, el repositorio GitHub y la integración de evidencias y pruebas. |
 
-## Acuerdo del equipo
+## Criterio de colaboración
 
-- Fecha de definición: **pendiente**.
-- Preferencias manifestadas y decisiones: **pendiente**.
-- Distribución efectiva de trabajo y evidencias: **pendiente**.
-- Validación de actividades y retrospectiva: **pendiente**.
+Las funciones corresponden a la **distribución acordada para gestionar y presentar el laboratorio**. No deben confundirse con una certificación de la autoría de cada archivo o con un registro de reuniones Scrum celebradas. Los entregables se gestionan como trabajo del equipo; los avances y pendientes se encuentran en [`backlog.md`](backlog.md) y [`tablero.md`](tablero.md).

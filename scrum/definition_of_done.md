@@ -12,6 +12,6 @@ Criterios técnicos y metodológicos que se utilizarán para valorar la finaliza
 | DoD-06 | Matriz de confusión | Dos imágenes en `outputs/reports/` | Cumplido |
 | DoD-07 | Modelo seleccionado guardado | `.joblib` y script de inferencia | Carga y predicción confirmadas en Windows |
 | DoD-08 | Interpretación comprensible | README y síntesis metodológica | Documentado |
-| DoD-09 | Relación CRISP-DM, TDSP y Scrum ML | Índice de fases, repositorio, backlog y sprints | Documentado; acuerdos Scrum personales pendientes |
+| DoD-09 | Relación CRISP-DM, TDSP y Scrum ML | Índice de fases, repositorio, backlog y sprints | Documentado; roles definidos y retrospectiva de aprendizajes disponible |
 
-**Validaciones complementarias pendientes:** ejecución en Mac, asignación definitiva de roles y retrospectiva basada en hechos confirmados. Los criterios técnicos cumplidos no implican automáticamente que todas las actividades de Scrum hayan ocurrido.
+**Validaciones complementarias pendientes:** ejecución en macOS y ensayo grupal. La retrospectiva se elaboró a partir de experiencias verificadas; no constituye constancia de una ceremonia formal. Los criterios técnicos cumplidos no implican automáticamente que todas las actividades de Scrum hayan ocurrido.
