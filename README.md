@@ -67,54 +67,8 @@ docs/crisp_dm/                     Índice de las seis fases y material de apoyo
 scrum/                            Backlog, tablero, sprints y Definition of Done
 ```
 
-## 6. Reproducir la práctica
+**Reproducibilidad:** [Instrucciones para instalar dependencias, ejecutar el notebook y validar los resultados](docs/REPRODUCIBILIDAD.md).
 
-**Windows (PowerShell), desde la raíz del repositorio:**
+## 6. Rúbrica y matriz de evidencias — Laboratorio 1
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-python -m pytest -q
-python scripts/generar_reporte_calidad.py
-python scripts/verificar_modelo_guardado.py
-```
-
-**macOS:**
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-python -m pytest -q
-python scripts/verificar_modelo_guardado.py
-```
-
-Para ejecutar el notebook, abrir [`notebooks/01_laboratorio_drybean.ipynb`](notebooks/01_laboratorio_drybean.ipynb) en VS Code, seleccionar el kernel del `.venv`, reiniciarlo y ejecutar todas las celdas. La descarga UCI necesita conexión a Internet. No subir `.venv` al repositorio. Abrir archivos `.joblib` únicamente de fuentes confiables.
-
-## 7. Estado de validación técnica
-
-- **Entorno Windows:** notebook ejecutado de principio a fin según la comprobación del equipo; siete pruebas automatizadas aprobadas y reportes de calidad generados.
-- **Inferencia:** modelo guardado cargado con `scikit-learn 1.6.1`; una muestra fue clasificada como SEKER, coincidiendo con su etiqueta real. Este resultado individual no sustituye la evaluación de modelos.
-- **Colaboración:** repositorio versionado en GitHub. La reproducibilidad en macOS está pendiente de comprobar y la asignación definitiva de roles Scrum requiere acuerdo de los tres integrantes.
-
-Los detalles de las verificaciones y las tareas pendientes figuran en [Validación del proyecto](docs/VALIDACION_FINAL.md).
-
-## 8. Guía para la sustentación (10–12 minutos)
-
-La demostración se propone con **GitHub como hilo conductor** y **VS Code como apoyo** para mostrar el notebook ejecutado y la predicción local:
-
-1. Problema de negocio y objetivo; este README.
-2. CRISP-DM y organización TDSP; `docs/crisp_dm/` y carpetas principales.
-3. Comprensión y preparación de datos; notebook y reportes.
-4. Entrenamiento, comparación, matrices de confusión y selección del modelo.
-5. Inferencia local, evidencias Scrum ML y conclusiones.
-
-**[Ruta de sustentación detallada](docs/RUTA_SUSTENTACION_PROFESOR.md)** · **[Mapa de rúbrica y evidencias](docs/MAPA_RUBRICA_EVIDENCIAS.md)**
-
-## 9. Material de apoyo para los integrantes
-
-- [Guía de estudio](docs/GUIA_ESTUDIO_EQUIPO.md)
-- [Guion propuesto para tres integrantes](docs/GUION_SUSTENTACION_3_PERSONAS.md)
-- [PDF para compartir](docs/material_presentacion/)
-- [Validación técnica y pendientes](docs/VALIDACION_FINAL.md)
+La correspondencia entre los criterios de evaluación, los resultados y los archivos verificables se presenta en la [matriz de evidencias](docs/MAPA_RUBRICA_EVIDENCIAS.md).

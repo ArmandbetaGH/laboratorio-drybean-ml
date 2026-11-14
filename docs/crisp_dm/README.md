@@ -14,7 +14,7 @@ La solución se desarrolló siguiendo las **seis fases de CRISP-DM**. Cada enlac
 - [Comprensión del negocio: documento detallado](01_comprension_negocio.md)
 - [Matriz de evidencias CRISP-DM](02_evidencias_fases.md)
 - [Preguntas de reflexión](03_reflexiones_guia.md)
-- [Análisis de calidad y distribución](04_estudio_fase_2.md)
+- [Análisis de calidad y distribución](fases/02_comprension_datos.md)
 - [Síntesis metodológica y técnica](05_sintesis_final.md)
 
 Las fases están integradas en el [notebook principal](../../notebooks/01_laboratorio_drybean.ipynb); estos documentos permiten localizar rápidamente las evidencias.
